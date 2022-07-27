@@ -1,0 +1,31 @@
+.page-login {
+  margin: 10rem auto;
+  text-align: center;
+
+  >div {
+    margin-bottom: 1.2rem;
+  }
+
+  .logo {
+    width: 5rem;
+  }
+
+  .login-input {
+    width: 12.5rem;
+    padding: .5rem;
+  }
+
+  .login-submit {
+    padding: .5rem 6rem;
+    cursor: pointer;
+    background-color: $primary;
+    border: 0;
+    border-radius: .5rem;
+    color: #fff;
+
+    &[disabled] {
+      background-color: #ccc;
+      cursor: default;
+    }
+  }
+}

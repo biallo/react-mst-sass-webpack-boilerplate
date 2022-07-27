@@ -1,0 +1,23 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: $primary;
+  cursor: pointer;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  background-color: #fff;
+  width: 100%;
+  min-height: 100vh;
+}
