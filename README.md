@@ -6,6 +6,7 @@
 - <a href="https://mobx-state-tree.js.org" target="_blank">MobX-State-Tree</a>
 - <a href="https://v5.reactrouter.com/web/guides/quick-start" target="_blank">React-Router-Dom</a>
 - <a href="https://webpack.js.org" target="_blank">Webpack</a>
+- <a href="https://github.com/axios/axios" target="_blank">Axios</a>
 - <a href="https://sass-lang.com" target="_blank">Sass</a>
 
 
