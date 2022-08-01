@@ -1,6 +1,6 @@
 {
   "name": "react-mst-sass-webpack-boilerplate",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "一个使用 react, mobx-state-tree, sass, webpack 的简单样板",
   "scripts": {
     "start": "NODE_ENV=development webpack serve",

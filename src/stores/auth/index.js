@@ -56,12 +56,5 @@ export const Auth = types
           createdTime: '2022-01-01T11:11:11.000Z'
         }
       };
-    },
-
-    logout(navigate) {
-      // return await authService.logout();
-
-      // fake data
-      return true;
     }
   }));

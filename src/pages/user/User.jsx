@@ -34,7 +34,6 @@ const UserDetail = (props) => {
   };
 
   const handleLogout = async () => {
-    await store.auth.logout();
     await store.auth.removeAccount();
     navigate('/');
   };
