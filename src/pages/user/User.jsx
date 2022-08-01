@@ -33,8 +33,10 @@ const UserDetail = (props) => {
     setActivities(store.user.activities);
   };
 
-  const handleLogout = () => {
-    store.auth.logout(navigate);
+  const handleLogout = async () => {
+    await store.auth.logout();
+    await store.auth.removeAccount();
+    navigate('/');
   };
 
   if (!activities) {

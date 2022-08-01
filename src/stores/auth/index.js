@@ -59,7 +59,9 @@ export const Auth = types
     },
 
     logout(navigate) {
-      navigate('/');
-      self.removeAccount();
+      // return await authService.logout();
+
+      // fake data
+      return true;
     }
   }));
