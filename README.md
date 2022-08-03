@@ -2,12 +2,12 @@
 一个使用 react, mobx-state-tree, sass, webpack 的简单样板
 
 ## 项目依赖
-- <a href="https://reactjs.org" target="_blank">React</a>
-- <a href="https://mobx-state-tree.js.org" target="_blank">MobX-State-Tree</a>
-- <a href="https://v5.reactrouter.com/web/guides/quick-start" target="_blank">React-Router-Dom</a>
-- <a href="https://webpack.js.org" target="_blank">Webpack</a>
-- <a href="https://github.com/axios/axios" target="_blank">Axios</a>
-- <a href="https://sass-lang.com" target="_blank">Sass</a>
+- <a href="https://reactjs.org" target="_blank">react</a>
+- <a href="https://mobx-state-tree.js.org" target="_blank">mobx-state-tree</a>
+- <a href="https://v5.reactrouter.com/web/guides/quick-start" target="_blank">react-router-dom</a>
+- <a href="https://webpack.js.org" target="_blank">webpack</a>
+- <a href="https://github.com/axios/axios" target="_blank">axios</a>
+- <a href="https://sass-lang.com" target="_blank">sass</a>
 
 
 ## 环境依赖
