@@ -1,37 +1,47 @@
 # react-mst-sass-webpack-boilerplate
-一个使用 react, mobx-state-tree, sass, webpack 的简单样板
 
-## 项目依赖
-- <a href="https://reactjs.org" target="_blank">react</a>
-- <a href="https://mobx-state-tree.js.org" target="_blank">mobx-state-tree</a>
-- <a href="https://v5.reactrouter.com/web/guides/quick-start" target="_blank">react-router-dom</a>
-- <a href="https://webpack.js.org" target="_blank">webpack</a>
-- <a href="https://github.com/axios/axios" target="_blank">axios</a>
-- <a href="https://sass-lang.com" target="_blank">sass</a>
+A boilerplate using React, Mobx-State-Tree, React-Router-Dom, Sass, Webpack
+
+## Language
+
+- [中文](README.zh.md)
+- English
+
+## Project dependencies
+
+- [React](https://reactjs.org)
+- [Mobx-State-Tree](https://mobx-state-tree.js.org)
+- [React-Router-Dom](https://v5.reactrouter.com/web/guides/quick-start)
+- [Sass](https://sass-lang.com)
+- [Webpack](https://webpack.js.org)
 
 
-## 环境依赖
-确保环境中的 node.js 版本不低于 v14
+## Project dev dependencies
 
-安装依赖的 node_modules
+Make sure you have Node.js >= 14.0.0 installed on your machine.
+
+
+## Installation
 
 ```
 npm install
 ```
 
-在项目根目录建立环境配置文件，格式可以参考 `.env.example` 文件中的格式，建立 `.env.local` 用于本地开发，建立 `.env` 用于正式环境。
-在代码中使用 `process.env.XXX` 访问其中定义的值。
+Create a `.env.local` file in the root directory of the project, the format can refer to the format in the `.env.example` file.
+create `.env.local` for local development, and create `.env` for the production environment.
+Use `process.env.XXX` in code to access the values defined there.
 
-## 开发
+
+## Development
 
 ```
 npm start
 ```
 
-## 打包
+## Production
 
 ```
 npm run build
 ```
 
-打包后会在根目录生成一个 /dist 目录，入口文件为 `index.html`，将此目录放置于服务器使用类似 nginx 等工具进行配置即可。
+After the package is generated, a `/dist` directory will be generated in the root directory.
