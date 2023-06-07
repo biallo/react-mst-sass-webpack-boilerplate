@@ -27,8 +27,10 @@ Make sure you have Node.js >= 14.0.0 installed on your machine.
 npm install
 ```
 
-Create a `.env.local` file in the root directory of the project, the format can refer to the format in the `.env.example` file.
 create `.env.local` for local development, and create `.env` for the production environment.
+
+the format can refer to the format in the `.env.example` file.
+
 Use `process.env.XXX` in code to access the values defined there.
 
 

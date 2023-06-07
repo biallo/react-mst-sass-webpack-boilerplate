@@ -28,6 +28,7 @@ npm install
 ```
 
 在项目根目录建立环境配置文件，格式可以参考 `.env.example` 文件中的格式，建立 `.env.local` 用于本地开发，建立 `.env` 用于正式环境。
+
 在代码中使用 `process.env.XXX` 访问其中定义的值。
 
 ## 开发
