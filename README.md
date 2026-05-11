@@ -7,6 +7,10 @@ A boilerplate using React, Mobx-State-Tree, React-Router-Dom, Sass, Webpack
 - [中文](README.zh.md)
 - English
 
+## Preview
+
+[https://biallo.github.io/react-mst-sass-webpack-boilerplate/](https://biallo.github.io/react-mst-sass-webpack-boilerplate/)
+
 ## Project dependencies
 
 - [React](https://reactjs.org)
@@ -15,11 +19,9 @@ A boilerplate using React, Mobx-State-Tree, React-Router-Dom, Sass, Webpack
 - [Sass](https://sass-lang.com)
 - [Webpack](https://webpack.js.org)
 
-
 ## Project dev dependencies
 
 Make sure you have Node.js >= 14.0.0 installed on your machine.
-
 
 ## Installation
 
@@ -32,7 +34,6 @@ create `.env.local` for local development, and create `.env` for the production 
 the format can refer to the format in the `.env.example` file.
 
 Use `process.env.XXX` in code to access the values defined there.
-
 
 ## Development
 

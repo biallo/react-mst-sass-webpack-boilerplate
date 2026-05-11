@@ -7,6 +7,11 @@ import { resetAxiosAuth } from '../../utils/axios';
 import authService from '../../services/AuthService';
 import { AuthInfoType } from './AuthTypes';
 
+const getHomePath = () => {
+  const publicPath = __PUBLIC_PATH__;
+  return publicPath.endsWith('/') ? publicPath : `${publicPath}/`;
+};
+
 export const Auth = types
   .model('Auth', {
     userInfo: types.optional(AuthInfoType, {}),
@@ -23,7 +28,7 @@ export const Auth = types
     },
     checkNeedLogin(redirectTo) {
       if (!self.isAuthorized) {
-        window.location.href='/';
+        window.location.href = getHomePath();
       }
       return !self.isAuthorized;
     },
@@ -31,7 +36,7 @@ export const Auth = types
       self.removeAccount();
 
       if (jumpToLogin) {
-        window.location.href='/';
+        window.location.href = getHomePath();
       }
     },
     async removeAccount() {

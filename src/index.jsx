@@ -5,8 +5,11 @@ import App from './App';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
+const publicPath = __PUBLIC_PATH__;
+const basename = publicPath === '/' ? undefined : publicPath.replace(/\/$/, '');
+
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={basename}>
     <App />
   </BrowserRouter>
 );

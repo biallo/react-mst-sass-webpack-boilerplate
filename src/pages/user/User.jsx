@@ -10,9 +10,29 @@ import {
   inject
 } from 'mobx-react';
 
-import moment from 'moment-timezone';
 import { useNavigate } from 'react-router-dom';
 import { ACCOUNT_ACTIVITIES_TYPE } from '../../utils/Constants';
+
+const formatUtcOffsetDate = (value, offsetHours = 8) => {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return '';
+  }
+
+  const offsetDate = new Date(date.getTime() + offsetHours * 60 * 60 * 1000);
+  const pad = (number) => String(number).padStart(2, '0');
+
+  return [
+    offsetDate.getUTCFullYear(),
+    pad(offsetDate.getUTCMonth() + 1),
+    pad(offsetDate.getUTCDate())
+  ].join('-') + ' ' + [
+    pad(offsetDate.getUTCHours()),
+    pad(offsetDate.getUTCMinutes()),
+    pad(offsetDate.getUTCSeconds())
+  ].join(':');
+};
 
 const UserDetail = (props) => {
   const { store } = props;
@@ -68,13 +88,7 @@ const UserDetail = (props) => {
               </div>
               <div className="list-item">
                 <div className="list-helper-text">时间</div>
-                <div>
-                  {
-                    moment(item.createdTime)
-                      .utcOffset(8)
-                      .format('YYYY-MM-DD HH:mm:ss')
-                  }
-                </div>
+                <div>{formatUtcOffsetDate(item.createdTime)}</div>
               </div>
             </div>
           );
